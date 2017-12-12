@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import Table from './Table';
 import Search from '../containers/Search';
 import { BrowserRouter, Route } from 'react-router-dom';
 
@@ -9,7 +10,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <Route path="/search" component={Search} />  
+          <Table />
+          <Route path="/search" component={Search} />
         </div>
       </BrowserRouter>
 
